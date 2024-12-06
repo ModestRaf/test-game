@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+<div class="map">
+    <img src="img/map/path.png" class="path-img" alt="" loading="lazy">
+    <div class="point start" style="left: 440px; top: 500px;"></div>
+    <div class="point blackpoint" style="left: 355px; top: 472px;"></div>
+    <div class="point blackpoint" style="left: 290px; top: 509px;"></div>
+    <div class="point" style="left: 200px; top: 537px;"></div>
+    <div class="point" style="left: 114px; top: 510px;"></div>
+    <div class="point checkpoint" style="left: 123px; top: 445px;"></div>
+    <div class="point finish" style="right: 55px; top: 170px;"></div>
+    <div class="map-player"></div>
+    <div class="map-start"></div>
+    <div class="map-finish"></div>
+    <div class="map-ladder"></div>
+    <div class="map-plant"></div>
+</div>
+<nav class="menu">
+    <div class="menu__friends">
+        <button class="menu__friends-left arrow"></button>
+        <div class="menu__friends-container">
+        </div>
+        <button class="menu__friends-right arrow"></button>
+    </div>
+    <button class="menu__chat"></button>
+    <button class="menu__go">в универ</button>
+    <button class="menu__mail"></button>
+    <button class="menu__rating"></button>
+</nav>
+<script src="js/data.js"></script>
+<script src="js/index.js"></script>
+<script src="js/animations.js"></script>
+<template id="friend">
+    <button class="friend__icon">
+        <img class="friend__icon-img" src="img/friend/icon-friend.png" alt="" loading="lazy"/>
+        <span class="friend__icon-add visually-hidden"></span>
+    </button>
+</template>
+<template id="rating">
+    <div class="rating__content">
+        <div class="rating__head">
+            <img class="friend__icon-img" src="img/rating/rating-head.png" alt="" loading="lazy"/>
+        </div>
+        <button class="rating__close-button"></button>
+        <div class="rating__sort">
+            <button class="rating__sort-button sort-week">Недельный</button>
+            <button class="rating__sort-button sort-all">Общий</button>
+            <div class="rating__gamers">
+                <div class="rating__gamers-header">
+                    <a class="rank">Место</a>
+                    <a class="name">Имя Фамилия</a>
+                    <a class="exp">Опыт</a>
+                </div>
+                <div class="rating__gamers-container"></div>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="gamer">
+    <div class="gamer__content">
+        <span class="gamer-position">1</span>
+        <div class="gamer-icon">
+            <img class="friend__icon-img" src="img/friend/icon-background.png" width="27" height="27" alt="" loading="lazy"/>
+        </div>
+        <span class="gamer-name">ваш друг</span>
+        <span class="gamer-rating">1000</span>
+    </div>
+</template>
+</body>
+</html>

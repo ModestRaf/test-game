@@ -1,0 +1,36 @@
+:root {
+    --go-button-color: rgb(252, 250, 249);
+    --overlay-color: rgba(0, 0, 0, 0.5);
+    --text-color: white;
+    --highlight-color: orange;
+    --text-shadow: 1px 1px 3px black;
+    --background-img: url("../img/background.png") no-repeat center;
+    --map-img: url("../img/map.png") no-repeat center;
+    --start-text-img: url("../img/map/start-text.png") no-repeat center;
+    --map-finish-img: url("../img/map/map-finish.png") no-repeat center;
+    --player-img: url("../img/map/player.png") center no-repeat;
+    --ladder-img: url("../img/map/ladder.png") center no-repeat;
+    --plant-img: url("../img/map/plant.png") center no-repeat;
+    --point-img: url("../img/map/point.png") center no-repeat;
+    --checkpoint-img: url("../img/map/checkpoint.png") center no-repeat;
+    --start-img: url("../img/map/start.png") center no-repeat;
+    --blackpoint-img: url("../img/map/blackpoint.png") center no-repeat;
+    --finish-img: url("../img/map/finish.png") center no-repeat;
+    --nav-friends-img: url("../img/menu/nav-friends.png") center no-repeat;
+    --chat-button-img: url("../img/menu/chat-button.png") center no-repeat;
+    --chat-button-active-img: url("../img/menu/chat-button-active.png") center no-repeat;
+    --go-button-img: url("../img/menu/go-button.png") center no-repeat;
+    --mail-button-img: url("../img/menu/mail-button.png") center no-repeat;
+    --rating-button-img: url("../img/menu/rating-button.png") center no-repeat;
+    --arrow-button-img: url("../img/menu/arrow-button.png") center no-repeat;
+    --icon-background-img: url("../img/friend/icon-background.png") center no-repeat;
+    --add-button-img: url("../img/friend/add-button.png") center no-repeat;
+    --background-popup-img: url("../img/rating/background-popup.png") center no-repeat;
+    --popup-name-img: url("../img/rating/popup-name.png") center no-repeat;
+    --close-button-img: url("../img/rating/close-button.png") center no-repeat;
+    --background-small-img: url("../img/rating/background-small.png") center no-repeat;
+    --rating-filter-img: url("../img/rating/rating-filter.png") center no-repeat;
+    --rating-filter-active-img: url("../img/rating/rating-filter-active.png") center no-repeat;
+    --line-img: url("../img/rating/line.png") center no-repeat;
+    --template-line: url("../img/gamer/template-line.png") center no-repeat;
+}

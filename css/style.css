@@ -1,0 +1,344 @@
+.page {
+    position: relative;
+    background: var(--background-img);
+    max-width: 980px;
+    height: 630px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    background: var(--map-img);
+    background-size: 980px 605px;
+    bottom: 13px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.map {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+.map-start {
+    background: var(--start-text-img);
+    position: absolute;
+    width: 68px;
+    height: 40px;
+    bottom: 18px;
+    right: 500px;
+}
+
+.map-finish {
+    background: var(--map-finish-img);
+    position: absolute;
+    width: 105px;
+    height: 58px;
+    bottom: 360px;
+    right: 10px;
+}
+
+.path-img {
+    padding-left: 70px;
+    padding-top: 0;
+}
+
+.map-player {
+    background: var(--player-img);
+    position: absolute;
+    width: 21px;
+    height: 69px;
+    left: 430px;
+    bottom: 65px;
+}
+
+.map-ladder {
+    background: var(--ladder-img);
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    left: 378px;
+    bottom: 56px;
+    z-index: -1;
+}
+
+.map-plant {
+    background: var(--plant-img);
+    position: absolute;
+    width: 55px;
+    height: 69px;
+    left: 355px;
+    bottom: 20px;
+}
+
+.point {
+    position: absolute;
+    background: var(--point-img);
+    width: 20px;
+    height: 14px;
+    transform: translate(-50%, -50%);
+}
+
+.checkpoint {
+    background: var(--checkpoint-img);
+    width: 25px;
+    height: 17px;
+}
+
+.start {
+    background: var(--start-img);
+    width: 37px;
+    height: 27px;
+}
+
+.blackpoint {
+    background: var(--blackpoint-img);
+}
+
+.finish {
+    background: var(--finish-img);
+    width: 37px;
+    height: 87px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 17px 0 4px;
+    gap: 4px;
+}
+
+.menu__friends {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-friends-img);
+    width: 536px;
+    height: 63px;
+    gap: 6px;
+}
+
+.menu__friends-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    height: 63px;
+}
+
+.menu__chat {
+    background: var(--chat-button-img);
+    width: 67px;
+    height: 62px;
+}
+
+.menu__chat:active {
+    background: var(--chat-button-active-img);
+    width: 67px;
+    height: 62px;
+}
+
+.menu__go {
+    background: var(--go-button-img);
+    width: 206px;
+    height: 67px;
+    font-size: 33px;
+    font-family: Cambria, sans-serif;
+    color: var(--go-button-color);
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+}
+
+.menu__mail {
+    background: var(--mail-button-img);
+    width: 68px;
+    height: 64px;
+}
+
+.menu__rating {
+    background: var(--rating-button-img);
+    width: 66px;
+    height: 61px;
+}
+
+.arrow {
+    background: var(--arrow-button-img);
+    width: 16px;
+    height: 29px;
+}
+
+.menu__friends-left {
+    transform: scale(-1, 1);
+    margin-left: 10px;
+}
+
+.menu__friends-right {
+    margin-right: 10px;
+}
+
+.friend__icon {
+    scroll-snap-align: start;
+    position: relative;
+    background: var(--icon-background-img);
+    padding-top: 11px;
+    min-width: 50px;
+    min-height: 51px;
+}
+
+.friend__icon-add {
+    position: absolute;
+    background: var(--add-button-img);
+    width: 34px;
+    height: 35px;
+    z-index: 5;
+    bottom: 25px;
+    left: 24px;
+}
+
+.rating__content {
+    background: var(--background-popup-img);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    min-width: 523px;
+    min-height: 455px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+.rating__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--popup-name-img);
+    width: 264px;
+    height: 33px;
+    transform: translate(49%, -40%);
+}
+
+.rating__close-button {
+    background: var(--close-button-img);
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.rating__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    z-index: 1000;
+}
+
+.rating__sort {
+    display: flex;
+    justify-content: center;
+    background: var(--background-small-img);
+    width: 464px;
+    height: 324px;
+    margin-left: 30px;
+    margin-top: 65px;
+    position: relative;
+}
+
+.rating__sort-button {
+    background: var(--rating-filter-img);
+    text-shadow: var(--text-shadow);
+    color: inherit;
+    width: 148px;
+    height: 42px;
+    position: absolute;
+    font-size: 17px;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+.sort-week {
+    transform: translateX(100px) translateY(-35px);
+}
+
+.sort-all {
+    transform: translateX(210px) translateY(-35px);
+}
+
+.rating__sort-button.active {
+    background: var(--rating-filter-active-img);
+    z-index: -1;
+}
+
+.rating__gamers-header {
+    background: var(--line-img);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    gap: 44px;
+    width: 403px;
+    height: 29px;
+    margin-top: 30px;
+}
+
+.exp {
+    margin-left: 100px;
+    padding-right: 15px;
+}
+
+.rating__gamers-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 403px;
+    height: 235px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.gamer__content {
+    display: grid;
+    grid-template-columns: 28px 30px auto 20px;
+    gap: 5px;
+    align-items: center;
+    background: var(--template-line);
+    text-align: left;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: bold;
+    width: 403px;
+    height: 32px;
+    padding: 0 40px 0 30px;
+}
+
+.friend__icon-img {
+    margin-top: 3px;
+}
+
+.gamer-position {
+    align-self: center;
+}
+
+.friend-highlight {
+    color: var(--highlight-color);
+}
